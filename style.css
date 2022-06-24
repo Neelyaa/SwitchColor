@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+
+:root {
+    --error-color: #dc3545;
+    --success-color: #28a745;
+    --warning-color: #ffc107;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-variant: small-caps;
+    font-size: 16px;
+    background-color: lightgrey;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+
+/* Theme Dark Toggle */
+body.dark { 
+	background: #292C35;
+    background-image: url(img/téléchargement-removebg-preview.png);
+}
+
+
+.theme {
+padding-top:30px;
+display:flex;
+margin:auto;
+justify-content: center;
+}
+
+#reverse {
+opacity:0;
+position: absolute;
+}
+
+/* Effet slide */
+
+#reverse:checked + .switch .ball{
+transform: translateX(24px);
+}
+
+
+/* Switch Ball Label */
+.switch {
+position: relative;
+justify-content: space-between;
+align-items: center;
+background-color: #555454;
+display: flex;
+border-radius: 50px;
+padding: 5px;
+height: 22px;
+width: 47px;
+cursor: pointer;
+transform: scale(1.3);
+}
+
+/* Switch Ball */
+.switch .ball {
+top: 2px;
+left:2px;
+width:18px;
+height:18px;
+border-radius: 50%;
+background-color: white;
+position: absolute;
+transform: translateX(0px);
+transition: all 0.2s linear;
+}
+
+/* Icone */
+
+.fa-moon {
+color:yellow;
+}
+
+.fa-sun {  
+color:rgb(248, 169, 23);
+margin-left:5px;
+}
+
+/* Bouton Random Color */
+
+.rand {
+    padding-top:100px;
+    padding-bottom:100px;
+    display:flex;
+    margin:auto;
+    justify-content: center;
+    }
+
+.randcolor {
+    border-radius: 30%;
+    border: 1px solid black;
+    box-shadow: 1px 1px 2px 1px rgb(53, 54, 54);
+    cursor: url(img/iconmonstr-weather-125.svg), auto;
+    width:100px;
+}
+.randcolor:hover {
+    transform: translateY(3px);
+    border-radius: 20px;
+    box-shadow: 1px 5px 2px 1px rgb(53, 54, 54);
+    }
+    
+    .randcolor:active {
+        transform: translate(0px);
+    }
+    
+/* Carré Fade RGB */
+
+#rgb {
+display: flex;
+border-radius: 10%;
+margin:auto;
+width: 200px;
+height: 200px;
+margin-bottom:100px;
+transition: 1.5s linear;
+}
+
+/* Generateur couleur Aleatoire + Code Hexa */
+.gen {
+margin: auto;
+width:200px;
+height: 200px;
+background-color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: row;
+flex-direction: column;
+}
+
+.code {
+font-size: 1rem;
+margin-bottom: 20px;
+}
+
+.gen button {
+background-color: #1687a7;
+border: none;
+padding: 10px 20px;
+color:white;
+cursor:pointer;
+}
+
+.place {
+padding-top:100px;
+}

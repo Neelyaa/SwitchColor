@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Swicth Theme</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fc7fce5b23.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="img/sticker-arc-en-ciel-nuages-removebg-preview.png">
+</head>
+<!-- Fonction Fade RGB-->
+
+<body onload="setup()">
+
+
+
+    <!-- Bouton Toggle Dark Theme -->
+    <div class="theme">
+        <input type="checkbox" class="tog" id="reverse">
+        <label for="reverse" class="switch">
+            <i class="fa-solid fa-moon"></i>
+            <i class="fa-solid fa-sun"></i>
+            <div class="ball"></div>
+        </label>
+    </div>
+
+
+    <!-- Bouton Random Color -->
+    <div class="rand" id="rand">
+        <input type="image" src="img/sticker-arc-en-ciel-nuages-removebg-preview.png" alt="random" class="randcolor"
+            id="random">
+    </div>
+
+
+    <!-- Fade RGB-->
+    <div id="rgb"></div>
+
+
+
+    <!-- Generateur Couleur Aleatoire-->
+    <div class="gen">
+        <div class="code">#000000</div>
+        <button onclick="generateColor()">Générer</button>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
